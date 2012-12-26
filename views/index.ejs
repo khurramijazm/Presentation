@@ -8,13 +8,12 @@
     <h1>Welcome To Node.js Technology Introduction </h1>
 	<p>by <%= name %></p>
     <nav>
-        <ul>
+        <ul class='iframe_ul'>
+            <li  id="home">Home</li>
             <li  id="http://nodejs.org">Node.js</li>
             <li  id="https://developers.google.com/v8/intro">V8 Engine</li>
-			<li id="http://www.h3manth.com/content/blocking-vs-non-blocking-nodejs">Non-Blocking IO</li>
-			<li id="http://www.websocket.org/aboutwebsocket.html">Websockets</li>
-			
-			
+            <li id="http://www.h3manth.com/content/blocking-vs-non-blocking-nodejs">Non-Blocking IO</li>
+            <li id="http://www.websocket.org/aboutwebsocket.html">Websockets</li>						
         </ul>
     </nav>
 	<section>
@@ -28,7 +27,23 @@
 	 <hr>
 	</footer>
 	</section>
+        <section>
+            <header>
+                <ul class='home_ul'>
+                    <li>Express Framework</li>
+                    <li>Socket.io</li>
+                    <li>EJS</li>
+                    <li>Backbone</li>
+                </ul>
+            </header>
+            <div id='homePage'>
+            </div>
+            <footer>
+                
+            </footer>
+        </section>
 <script src="javascripts/vendor/jquery-1.8.3.min.js"></script>
+<script src="javascripts/vendor/ejs_production.js"></script>
 <script src="javascripts/main.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , user = require('./routes/user')
+  , basic = require('./routes/basic')
   , http = require('http')
   , path = require('path')
   , curl = require('request');
@@ -30,19 +30,19 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
-app.get('/users', user.list);
-app.get('/getPage',function(req,res){
-    var url = req.param('url');
-    curl(url, function (error, response, body) {
-			if (!error && response.statusCode == 200) {
-				res.send(body);
-				}
-			  else{
-			    res.send({error:' cURL Error:'+error});
-			   }
-		});
-	
-});
+app.get('/basic', basic.basicNode);
+//app.get('/getPage',function(req,res){
+//    var url = req.param('url');
+//    curl(url, function (error, response, body) {
+//			if (!error && response.statusCode == 200) {
+//				res.send(body);
+//				}
+//			  else{
+//			    res.send({error:' cURL Error:'+error});
+//			   }
+//		});
+//	
+//});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

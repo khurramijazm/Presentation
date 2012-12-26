@@ -1,0 +1,54 @@
+<pre>
+ <p>For Windows Install Node from nodejs.org website. 
+ it comes <span class="keyword">with</span> npm ( node <span class="keyword">package</span> manager) 
+ then use npm to install node modules i.e.
+ 
+ npm install 
+ will node_modules directory and copy all the necessary modules into that.</p>
+ 
+
+ <p>Example of running http server which doesn<span class="STRING_LITERAL">&#39;</span>t require any node module
+ because it is plain javascript and executed by the Google V8 engine. 
+ V8 engine is open source and can be extended using C++ wrappers and Javascript engine will consume them.
+ </p>
+
+<span class="keyword">var</span> http = require(<span class="STRING_LITERAL">&#39;</span><span class="STRING_LITERAL">http</span><span class="STRING_LITERAL">&#39;</span>);
+<span class="keyword">var</span> <span class="ST0">server</span> = http.createServer(<span class="keyword">function</span> (req, res) {
+  res.writeHead(200, {<span class="STRING_LITERAL">&#39;</span><span class="STRING_LITERAL">Content-Type</span><span class="STRING_LITERAL">&#39;</span>: <span class="STRING_LITERAL">&#39;</span><span class="STRING_LITERAL">text/plain</span><span class="STRING_LITERAL">&#39;</span>});
+  res.end(<span class="STRING_LITERAL">&#39;</span><span class="STRING_LITERAL">Hello World</span><span class="ST1">\n</span><span class="STRING_LITERAL">&#39;</span>);
+});
+<span class="ST0">server</span>.listen(3000, <span class="STRING_LITERAL">&#39;</span><span class="STRING_LITERAL">127.0.0.1</span><span class="STRING_LITERAL">&#39;</span>);
+console.log(<span class="STRING_LITERAL">&#39;</span><span class="STRING_LITERAL">Server running at </span><span class="STRING_LITERAL">http://127.0.0.1:3000/</span><span class="STRING_LITERAL">&#39;</span>);
+
+
+<p> 
+ This is the simplest HTTP Server <span class="keyword">with</span> 5 lines of code. 
+  No .htaccess is required because we have just created the server 
+  No more headache of setting up the Apache Server 
+  
+  1. Securing the server ( &lt;ifModules&gt; etc ) 
+  2. Configuration of the server
+  3. Enabling only the modules we want 
+  4. PHP interpreter 
+  5. PHP Golbal Settings
+  6. PHP path and server path
+  a lot of modules are left  untouched <span class="keyword">for</span> a small web site when not needed 
+  i.e mod_rewrite , ssl, https, etc etc. ( Lot of hard disk space ). 
+  
+  </p>
+ <p> Here's some quick examples of different programming situations and which language you should probably go with.
+
+    Are you building some sort of daemon? Use Node.
+    Are you making a content website? Use PHP.
+    Do you want to share data between visitors? Use Node.
+    Are you a beginner looking to make a quick website? Use PHP.
+    Are you going to run a bunch of code in parallel? Use Node.
+    Are you writing software for clients to run on shared hosts? Use PHP.
+    Do you want push events from the server to the client using websockets? Use Node.
+    Does your team already know PHP? Use PHP.
+    Does your team already know frontend JavaScript? Node would be easier to learn.
+    Are you building a command line script? Both work.
+ </p>
+
+
+</pre>

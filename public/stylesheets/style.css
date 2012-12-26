@@ -6,20 +6,44 @@ body {
 a {
   color: #00B7FF;
 }
-
-ul{
+.iframe_ul
+{
     list-style: none;
 }
 
-ul li {
+.iframe_ul li {
     display: inline;
     margin:5px;
     padding:5px;
     background-color: #ccc;
     color:black;
 }
-ul li:hover{
+.iframe_ul li:hover{
     background-color: #000;
     color: #fff;
     cursor: pointer;
 }
+
+.home_ul{
+    list-style:none;
+}
+
+.home_ul li{
+    display: inline;
+    margin:5px;
+    padding:5px;
+    background-color: blue;
+    color:yellow;
+}
+.home_ul li:hover{
+    background-color: yellow;
+    color: blue;
+    cursor: pointer;
+}
+
+pre {color: #000000; background-color: #ffffff; font-family: Monospaced}
+table {color: #000000; background-color: #e9e8e2; font-family: Monospaced}
+.ST0 {background-color: #eceba3}
+.ST1 {color: #ce7b00; font-family: Monospaced; font-weight: bold}
+.STRING_LITERAL {color: #ce7b00}
+.keyword {color: #0000e6}

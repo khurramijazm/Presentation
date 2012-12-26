@@ -1,0 +1,34 @@
+I/O is the problem. 
+Data base query is problem 
+because every thing is waiting for 
+database to response . Database could be in America etc.
+
+We cannot wait for database to response. 
+Millions of clock cycles for  TCP / connection. 
+in case of database. etc. 
+
+in the mean time we can have other things running. instead
+of waiting for a response. 
+
+example. 
+Apache vs Nginx
+
+Nginx responds faster then Apache
+Concurency * memory. 
+
+vertical axis you have memory and vertical axis you have 
+connections.
+Apache uses lot of memory when you have thousands of 
+clients. 
+
+Apache uses threads for each connection. 
+Nginx uses event loops. 
+
+
+Apache context swithing is not free it costs CPU time
+Apache execution stack takes up memory. 
+For a massive concurrency cannot use an OS threads
+for each connection. 
+
+The right way of concurrency is to have single thread
+and have an event loop. 
