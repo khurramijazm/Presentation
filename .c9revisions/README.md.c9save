@@ -4,3 +4,4 @@
 {"ts":1359288583081,"patch":[[{"diffs":[[0,"pdated u"],[1,"sing Cloud"],[0,"\n"]],"start1":271,"start2":271,"length1":9,"length2":19}]],"length":290,"saved":false}
 {"ts":1359288584323,"patch":[[{"diffs":[[0,"ng Cloud"],[1,"9IDE"],[0,"\n"]],"start1":281,"start2":281,"length1":9,"length2":13}]],"length":294,"saved":false}
 {"ts":1359288587448,"patch":[[{"diffs":[[0,"loud9IDE"],[1," "],[0,"\n"]],"start1":285,"start2":285,"length1":9,"length2":10}]],"length":295,"saved":false}
+{"ts":1359288846027,"patch":[[{"diffs":[[0,"..\n\n"],[-1,"Updated using Cloud9IDE "],[0,"\n"]],"start1":266,"start2":266,"length1":29,"length2":5}]],"length":271,"saved":false}
